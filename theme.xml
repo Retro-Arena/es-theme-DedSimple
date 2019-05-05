@@ -1,0 +1,278 @@
+<theme>
+<formatVersion>6</formatVersion>
+ 
+<feature supported="carousel">
+<view name="system">
+
+<image name="background" extra="true">
+			<path>./_assets/systems/${system.name}.jpg</path>
+			<size>0 1</size>
+</image>
+
+ <text name="shortdescription" extra="false">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>center</alignment>
+	<forceUppercase>1</forceUppercase>
+	<fontSize>0.03</fontSize>
+	<color>818181</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.25</pos>
+	<size>0.32 0.1</size>
+ </text>
+
+ <carousel name="systemcarousel">
+   	<type>horizontal_wheel</type>
+	<color>00000000</color>
+	<origin>0 0</origin>
+	<pos>0.39 0.39</pos>
+	<size>1 1</size> 
+	<logoAlignment>center</logoAlignment>
+	<logoRotation>7.5</logoRotation>
+	<logoRotationOrigin>-5 0.5</logoRotationOrigin>
+	<logoScale>1</logoScale>
+	<logoSize>0.25 0.155</logoSize>
+	<maxLogoCount>0</maxLogoCount>
+ </carousel>
+ 
+ <text name="systemInfo"  extra="true">
+    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>center</alignment>
+	<backgroundColor>00000000</backgroundColor>
+	<color>ffffff</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.9 .97</pos>
+	<size>0.980 0.050</size> 
+	<fontSize>0.020</fontSize> 
+ </text>
+
+ <text name="longdescription" extra="false">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>center</alignment>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.04</fontSize>
+	<color>010101</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.58</pos>
+	<size>0.20 0.1</size>
+ </text>
+
+ <helpsystem name="help">
+    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+    <fontSize>0.019</fontSize>
+	<pos>0.05 0.97</pos>
+	<textColor>FFFFFF</textColor>
+    <iconColor>FFFFFF</iconColor>
+ </helpsystem>
+  
+ <image name="logos" extra="true">
+		<path>./_assets/logos2/${system.name}.png</path>
+		<origin>1 1</origin>
+		<pos>0.97 0.95</pos>
+		<maxSize>0.17 .37</maxSize>
+ </image>		
+ 
+ <image name="controllers" extra="true">
+		<path>./_assets/controllers/${system.name}.png</path>
+		<origin>1 1</origin>
+		<pos>0.80 0.99</pos>
+		<maxSize>0.20 0.15</maxSize>
+	</image>
+ 
+</view>
+</feature>
+
+
+<view name="basic, detailed, video, grid">
+
+ <image name="background" extra="true">
+	<tile>false</tile>
+	<path>./_assets/ingame-global-bgalt.jpg</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+ </image>
+
+ <image name="logos2" extra="true">
+		<path>./_assets/logos2/${system.name}.png</path>
+		<origin>0.5 1</origin>
+		<pos>0.25 .12</pos>
+		<maxSize>0.2 .12</maxSize>
+ </image>		
+
+ <text name="shortdescription" extra="true">
+	<pos>1 1</pos>
+ </text>
+ 
+ <text name="longdescription" extra="true">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.789 0.821</pos>
+	<size>0.25 0.2</size>
+ </text>
+ 
+<textlist name="gamelist">
+	<selectorColor>ffffff</selectorColor>
+	<selectorImagePath>./_assets/icon.png</selectorImagePath>
+	<selectedColor>78c7ef</selectedColor>
+	<selectorHeight>.05</selectorHeight>
+	<primaryColor>dee0e8</primaryColor>
+	<secondaryColor>eac428</secondaryColor>
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<alignment>left</alignment>
+	<forceUppercase>1</forceUppercase>
+	<pos>0.07 0.12</pos>
+	<size>0.395 0.75</size>
+	<fontSize>0.03</fontSize>
+	<lineSpacing>1.70</lineSpacing>
+	<horizontalMargin>0.05</horizontalMargin>
+</textlist>
+
+<helpsystem name="help">
+    <fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+    <fontSize>0.020</fontSize>
+	<pos>0.48 0.96</pos>
+	<textColor>FFFFFF</textColor>
+    <iconColor>FFFFFF</iconColor>
+</helpsystem>
+
+
+<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+	<pos>1 1</pos>
+</text>
+<datetime name="md_lastplayed, md_releasedate">
+	<pos>1 1</pos>
+</datetime>
+<rating name="md_rating">
+	<pos>1 1</pos>
+</rating>
+
+</view>
+
+<view name="basic, detailed, grid">
+ <image name="md_image">
+	<origin>0.5 0.5</origin>
+	<pos>0.6925 0.3915</pos>
+	<maxSize>0.4292 0.5297</maxSize>
+ </image>
+ 
+ 	<image name="controllers" extra="true">
+		<path>./_assets/controllers/${system.name}.png</path>
+		<origin>0 1</origin>
+		<pos>0.435 0.17</pos>
+		<maxSize>0.15 0.11</maxSize>
+	</image>
+	
+</view>
+
+<feature supported="video">
+
+<view name="video">
+ <video name="md_video">
+	<origin>0.5 0.5</origin>
+	<pos>0.6925 0.43</pos>
+	<maxSize>0.4292 0.5297</maxSize>
+	<delay>0.7</delay>
+	<showSnapshotNoVideo>true</showSnapshotNoVideo>
+	<showSnapshotDelay>true</showSnapshotDelay>
+ </video>
+ </view>
+ 
+  </feature>
+  	
+<view name="detailed, video">
+ <image name="logo2" extra="true">
+	<origin>0 0</origin>
+	<pos>1 1</pos>
+ </image>
+ <text name="longdescription" extra="true">
+	<origin>0 0</origin>
+	<pos>1 1</pos>
+ </text>
+	    
+	<image name="md_wheel">
+		<origin>0.05 0.5</origin>
+		<pos>0.12 0.50</pos>
+		<maxSize>0.20 0.10</maxSize>
+	</image>
+						
+	<image name="controllers" extra="true">
+		<path>./_assets/controllers/${system.name}.png</path>
+		<origin>0 1</origin>
+		<pos>0.435 0.17</pos>
+		<maxSize>0.15 0.11</maxSize>
+	</image>
+	
+		<image name="md_marquee">
+            <origin>0.5 1.0</origin>
+            <pos>0.69 0.165</pos>
+            <maxSize>0.21 0.14</maxSize>
+	    </image>
+			
+		
+ <text name="md_lbl_genre, md_genre, md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_players, md_players, md_lbl_rating">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<alignment>left</alignment>
+	<size>0.11 0.02</size>
+ </text>
+ <text name="md_lbl_genre">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.761</pos>
+ </text>
+ <text name="md_genre">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.761</pos>
+ </text>
+ <text name="md_lbl_releasedate">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.791</pos>
+ </text>
+ <datetime name="md_releasedate">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<pos>0.535 0.781</pos>
+	<size>0.11 0.02</size>
+ </datetime>
+ <text name="md_lbl_developer">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.821</pos>
+ </text>
+ <text name="md_developer">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.821</pos>
+ </text>
+ <text name="md_lbl_players">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.851</pos>
+ </text>
+ <text name="md_players">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.851</pos>
+  </text>
+ <text name="md_lbl_rating">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.881</pos>
+ </text>
+ <rating name="md_rating">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.881</pos>
+	<size>0.11 0.02</size>
+	<color>818181</color>
+ </rating>
+ 
+ <text name="md_description">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.789 0.821</pos>
+	<size>0.25 0.16</size>
+ </text>
+</view>
+</theme>
